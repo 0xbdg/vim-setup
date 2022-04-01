@@ -10,6 +10,7 @@ set mouse=a
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'ryanoasis/vim-devicons'
 Plug 'akinsho/bufferline.nvim'
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
