@@ -9,6 +9,8 @@ set mouse=a
 
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'akinsho/bufferline.nvim'
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'https://github.com/preservim/nerdtree'
@@ -18,6 +20,10 @@ Plug 'gruvbox-community/gruvbox'
 call plug#end()
 
 set termguicolors
+lua << EOF
+require("bufferline").setup{}
+EOF
+
 colo gruvbox
 set background=dark
 
